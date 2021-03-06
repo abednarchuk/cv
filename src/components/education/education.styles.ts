@@ -2,23 +2,25 @@ import { makeStyles } from '@material-ui/core'
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 275,
+    maxWidth: 610,
+    height: 'fit-content',
     borderBottom: `2px solid ${theme.palette.secondary.main}`,
   },
   header: {
     borderBottom: `2px solid ${theme.palette.secondary.main}`,
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.getContrastText(theme.palette.primary.main),
-    '& .MuiCardHeader-avatar': {
-      display: 'flex',
-      justifyContent: 'center',
-      width: '100%',
-      margin: 0,
-    },
   },
-  avatar: {
-    height: 150,
-    width: 150,
-    border: `2px solid ${theme.palette.secondary.main}`,
+  itemLeft: {
+    width: 100,
+    height: 30,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+  itemContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+    width: 'auto',
   },
 }))
